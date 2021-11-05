@@ -47,13 +47,9 @@
     "name": "babel-plugin-transform-line",
     "repository": "ibi-group/babel-plugin-transform-line",
     "scripts": {
-        "lint": "eslint -c ./node_modules/isotropic-dev-dependencies/config/eslint-script.json --no-eslintrc --resolve-plugins-relative-to ./node_modules/isotropic-dev-dependencies js test",
-        "postinstall": "husky install ./node_modules/isotropic-dev-dependencies/hooks",
-        "postpublish": "pinst --enable",
-        "posttest": "[ -z \"$npm_config_coverage\" ] || nyc --nycrc-path ./node_modules/isotropic-dev-dependencies/config/nyc.json check-coverage",
         "prepublishOnly": "npm test --coverage && pinst --disable",
         "pretest": "npm run lint",
         "test": "cross-env BABEL_DISABLE_CACHE=1 nyc --nycrc-path ./node_modules/isotropic-dev-dependencies/config/nyc.json mocha"
     },
-    "version": "0.10.1"
+    "version": "0.10.2"
 }
