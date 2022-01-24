@@ -27,7 +27,7 @@
         "isotropic-dev-dependencies": "~0.1.0"
     },
     "engines": {
-        "node": ">=14.15.5",
+        "node": ">=16.0.0",
         "npm": ">=7.5.4"
     },
     "files": [
